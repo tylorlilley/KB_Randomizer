@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tylorlilley.kbrandomizer.AboutActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About the Author"
+                android:id="@+id/author_label"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="This app was created by Tylor Lilley. I am unaffiliated with Queen Games, and am simply a fan of Kingdom Builder who wanted to make this randomization tool for his own personal use. I have decided to release it for free in case there are other fans who would like to use it as well. If you&apos;d like to get in touch with me or play some of the video games I have created, please feel free to visit my website at tylorlilley.com."
+                android:id="@+id/author_text"
+                android:textAlignment="center"
+                android:layout_below="@+id/game_label"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:autoLink="web"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About the Game"
+                android:id="@+id/game_label"
+                android:textAlignment="center"
+                android:layout_below="@+id/game_text"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Kingdom Builder is a board game published by Queen Games and designed by Donald X. Vaccarino. It won the Spiel de Jahres, or Game of the Year, award in 2012. Since then, four expansions have been published for the game, and three promotional items have been produced."
+                android:id="@+id/game_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_below="@+id/author_label"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About the App"
+                android:id="@+id/app_label"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/author_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="This app can be used to randomize every aspect of the setup of a game of Kingdom Builder with the push of a single button. The boards and cards will be randomly chosen from among the ones availble in the enabled expansions. You can enable and disable a given expansion in the Settings menu. All boards and cards are color-coded to indicate which expansion they come from in order to facilitate locating the game component quickly and easily."
+                android:id="@+id/app_text1"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/app_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When setting up a game using this app, the &quot;↷&quot; symbol following a given board&apos;s name indicates the board is to be turned upside down in that position."
+                android:id="@+id/textView"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Info for Using the Expansions"
+                android:id="@+id/app_expansions_label"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When using the Nomads expansion, the nomad spaces for a given board will also be randomized for you. The name of the chosen nomads tile will be listed after a &quot;-&quot; symbol following the given board&apos;s name. Boards with more than one nomad space will display a nomad tile to use for each space in this fashion. The names of the &quot;Grass Donation&quot;, &quot;Desert Donation&quot;, etc. tiles were shortened to just &quot;Grass&quot;, &quot;Desert&quot;, etc. in order to conserve needed space on the randomizer screen."
+                android:id="@+id/app_text3"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When using the Crossroads expansion alone, there will be no possible kingdom cards for the randomizer to select. This is not recommended by the games rules."
+                android:id="@+id/app_text4"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="The final version of the english rules has not yet been released for the Harvest expansion. The translations given for the board and card names for this expansion are simply placeholders, and may get changed or updated once the final version of the english rules for this expansion is released. "
+                android:id="@+id/app_text7"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Info for Using Promotional Items"
+                android:id="@+id/app_promo_label"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When using the promotional items, the &quot;Use With Assigned Board&quot; option defaults to being enabled. This will cause the randomizer to only use the promos when certain boards are used in the setup, as suggested by the game&apos;s desinger, Donald X. Vaccarino. These boards are the Harbor and/or the Oracle board for the Capitols promo, the Tavern board for the Caves promo, and the Harbor and/or the Lighthouse board for the Island promo. Turning off this option in the Settings menu will instead allow the promos to be used randomly with any setup, but with the same relative frequency as when the promos were used with their assigned boards. To instead always include the enabled promos, enable the &quot;Always use&quot; option in the Settings menu."
+                android:id="@+id/app_text2"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When using the Capitols promo, the randomizer will always assign both Capitols to an available spot among those on the selected boards if possible. These boards will be marked with &quot;- Capitol&quot; following the given board&apos;s name. Some boards have more than one castle on them. When these boards are used with the Capitols promo, it is possible for one, both, or neither Capitol to be placed on the same board. For this reason, the words (first), (second), or (both) will follow the added &quot;- Capitol&quot; for any boards where there are two castles present."
+                android:id="@+id/app_text5"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="When using the Caves promo, the randomizer will always assign all four Caves to an available spot among those on the selected boards if possible. These boards will be marked with &quot;- Cave&quot; following the given board&apos;s name. The suggested rule for placing the cave is to place it on the first available mountain hex when scanning the right-side-up board from left-to-right and top-to-bottom that satisfies the condition of being more than two spaces away from any location, castle, nomad, palace, or silo spaces."
+                android:id="@+id/app_text6"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

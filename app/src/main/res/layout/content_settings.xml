@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tylorlilley.kbrandomizer.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/toggle_expansions"
+                android:id="@+id/expansionsLabel"
+                android:layout_margin="10dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:foregroundGravity="center"
+                android:showDividers="middle"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:stretchColumns="*"
+                android:background="#ffffff"
+                android:shrinkColumns="2" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/base_game"
+                        android:id="@+id/baseGameBox"
+                        android:checked="true"
+                        android:background="#e0e0e0"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nomads"
+                        android:id="@+id/nomadsBox"
+                        android:checked="false"
+                        android:background="#e57373"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crossroads"
+                        android:id="@+id/crossroadsBox"
+                        android:checked="false"
+                        android:background="#64b5f6"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marshlands"
+                        android:id="@+id/marshlandsBox"
+                        android:checked="false"
+                        android:background="#a1887f"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harvest"
+                        android:id="@+id/harvestBox"
+                        android:checked="false"
+                        android:background="#ffd54f"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateExpansionSettings" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/toggle_promos"
+                android:id="@+id/promosLabel"
+                android:layout_margin="10dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:layout_margin="5dp"
+                android:background="#ffffff" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/capitols"
+                        android:id="@+id/capitolsBox"
+                        android:checked="false"
+                        android:background="#f8bbd0"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateGenericSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/caves"
+                        android:id="@+id/cavesBox"
+                        android:checked="false"
+                        android:background="#e1bee7"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateGenericSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/island"
+                        android:id="@+id/islandBox"
+                        android:checked="false"
+                        android:background="#b2dfdb"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:buttonTint="#000000"
+                        android:onClick="updateGenericSettings" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/promo_options"
+                android:id="@+id/optionsLabel"
+                android:layout_margin="10dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:layout_margin="5dp"
+                android:background="#ffffff" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_with_assigned_board"
+                        android:id="@+id/useWithAssignedBox"
+                        android:checked="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#eeeeee"
+                        android:buttonTint="#000000"
+                        android:onClick="updateGenericSettings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/always_use"
+                        android:id="@+id/alwaysUseBox"
+                        android:checked="false"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#eeeeee"
+                        android:buttonTint="#000000"
+                        android:onClick="updateGenericSettings" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
