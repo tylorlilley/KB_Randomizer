@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.tylorlilley.kbrandomizer.MainActivity">
+    tools:context="com.tylorlilley.talismanrandomizer.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#C22939"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
@@ -31,6 +31,6 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/go"
         android:onClick="randomizeButton"
-        app:backgroundTint="#81c784" />
+        app:backgroundTint="#C22939" />
 
 </android.support.design.widget.CoordinatorLayout>

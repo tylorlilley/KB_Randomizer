@@ -1,21 +1,190 @@
 <resources>
-    <string name="app_name">KB Randomizer</string>
+    <!-- App Activities -->
+    <string name="app_name">Talisman Randomizer</string>
     <string name="action_settings">Settings</string>
-    <string name="base_game">Base Game</string>
-    <string name="nomads">Nomads</string>
-    <string name="crossroads">Crossroads</string>
-    <string name="capitols">Capitols</string>
-    <string name="caves">Caves</string>
-    <string name="island">Island</string>
-    <string name="use_with_assigned_board">Use With Assigned Board</string>
-    <string name="always_use">Always Use</string>
-    <string name="initialized">Initialized</string>
-    <string name="current_configuration">Current Configuration</string>
-    <string name="harvest">Harvest</string>
-    <string name="marshlands">Marshlands</string>
     <string name="action_randomizer">Randomizer</string>
     <string name="action_about">About</string>
+    <string name="initialized">Initialized</string>
+    <!-- About -->
+    <string name="author_label">About the Author</string>
+    <string name="about_the_author">This app was created by Tylor Lilley. I am unaffiliated with Fantasy Flight Games and Games Workshop, and am simply a fan of Talisman who wanted to make this randomization tool for his own personal use. I have decided to release it for free in case there are other fans who would like to use it as well. If you\'d like to get in touch with me or play some of the video games I have created, please feel free to visit my website at tylorlilley.com.</string>
+    <string name="game_label">About the Game</string>
+    <string name="about_the_game">the original Talisman board game was originally published in 1983 by Games Workshop. This randomizer is for the Revised 4th Edition of the game that was released by Fantasy Flight games from 2008 to 2016. It includes all official expansions for that edition of the game, as well as an option to include any characters that were released for the official Digital Edition of the game made by Nomad Games.</string>
+    <string name="app_label">About the App</string>
+    <string name="about_the_app1">This app can be used to randomize the character and alternate ending selction for a game of Talisman, with the push of a single button. The characters and endings will be randomly chosen from among the ones availble in the enabled expansions. You can enable and disable a given expansion in the Settings menu. If Hidden Endings are being used, the ending will stay hidden by the app until it is time to be revealed by pressing the REVEAL! button.</string>
+    <string name="about_the_app2">Clicking on the DEAD button next to a character, or clicking on the NEXT ENDING button, will display the next available character or ending for the given slot chosen at random from among the ones remaining, if any are available.</string>
+    <string name="about_the_expansions">Info for Using the Expansions</string>
+    <string name="about_the_app_3">When using an expansion, all of that expansions characters and alternate endings are added to the available ones to choose from during randomization. Because of this, there must always be at least one expansion selected for use on the Settings page.</string>
+    <string name="about_the_app4">The Dungeon expansion, the Nether Realm expansion, and Digital Edition expansion contain no alternate endings and so cannot be chosen by themselves to randomize from. The Deep Realm expansion is not included in this app because it adds neither any characters nor any alternate endings to the game.</string>
+    <string name="about_the_ending">Info for Using Ending Settings</string>
+    <string name="about_the_app5">If neither Hidden Only nor Revealed Only is selected in the Settings page, the randomizer will select from all three types of endings (Hidden, Standard, Revealed). If it selects a Hidden or a Standard ending, it will hide this ending until it is time to reveal it with the REVEAL! button. If it is a Revealed ending, it will reveal the ending right away.</string>
+    <string name="about_the_app6">If just Hidden Only is selected in the Settings page, the randomizer will select from the two applicable types of endings (Hidden, Standard). It will hide this ending until it is time to reveal it with the REVEAL! button.</string>
+    <string name="about_the_app7">If just Revealed Only is selected in the Settings page, the randomizer will select from the two applicable types of endings (Standard, Revealed). It will reveal this ending right away.</string>
+    <string name="about_the_app8">If both Hidden Only and Revealed Only is selected in the Settings page, the randomizer will select from the only type of ending available in both camps (Standard). It will hide this ending until it is time to reveal it with the REVEAL! button.</string>
+    <!-- Options -->
+    <string name="base_game">Base Game</string>
+    <string name="reaper_expansion">Reaper</string>
+    <string name="dungeon_expansion">Dungeon</string>
+    <string name="frostmarch_expansion">Frostmarch</string>
+    <string name="highland_expansion">Highland</string>
+    <string name="sacred_pool_expansion">Sacred Pool</string>
+    <string name="dragon_expansion">Dragon</string>
+    <string name="blood_moon_expansion">Blood Moon</string>
+    <string name="city_expansion">City</string>
+    <string name="firelands_expansion">Firelands</string>
+    <string name="woodland_expansion">Woodland</string>
+    <string name="harbinger_expansion">Harbinger</string>
+    <string name="cataclysm_expansion">Cataclysm</string>
+    <string name="nether_realm_expansion">Nether Realm</string>
+    <string name="digital_edition_expansion">Digital Edition</string>
+    <string name="hidden_only">Hidden Only</string>
+    <string name="revealed_only">Revealed Only</string>
+    <string name="number_of_players">Number of Players:</string>
+    <!-- Buttons and Labels -->
+    <string name="reveal_button">REVEAL!</string>
+    <string name="dead_button">DEAD</string>
+    <string name="next_ending_button">NEXT ENDING</string>
+    <string name="hidden_ending_label">Hidden Ending</string>
+    <string name="alternate_ending_label">Alternate Ending:</string>
+    <string name="current_ending_label">Current Ending</string>
     <string name="toggle_expansions">Toggle Expansions:</string>
-    <string name="toggle_promos">Toggle Promos:</string>
-    <string name="promo_options">Promo Options:</string>
+    <string name="ending_options_label">Ending Options:</string>
+    <string name="ending_is_hidden">Is Hidden</string>
+    <!-- Base game -->
+    <string name="priest">Priest</string>
+    <string name="monk">Monk</string>
+    <string name="warrior">Warrior</string>
+    <string name="troll">Troll</string>
+    <string name="wizard">Wizard</string>
+    <string name="sorceress">Sorceress</string>
+    <string name="ghoul">Ghoul</string>
+    <string name="minstrel">Minstrel</string>
+    <string name="thief">Thief</string>
+    <string name="assassin">Assassin</string>
+    <string name="druid">Druid</string>
+    <string name="dwarf">Dwarf</string>
+    <string name="elf">Elf</string>
+    <string name="prophetess">Prophetess</string>
+    <string name="crown_of_command">Crown of Command</string>
+    <!-- Reaper -->
+    <string name="dark_cultist">Dark Cultist</string>
+    <string name="knight">Knight</string>
+    <string name="merhant">Merchant</string>
+    <string name="sage">Sage</string>
+    <string name="danse_macabre">Danse Macabre</string>
+    <!-- Dungeon -->
+    <string name="amazon">Amazon</string>
+    <string name="gladiator">Gladiator</string>
+    <string name="gypsy">Gypsy</string>
+    <string name="philosopher">Amazon</string>
+    <string name="swashbuckler">Swashbuckler</string>
+    <!-- Frostmarch -->
+    <string name="leprechaun">Leprechaun</string>
+    <string name="ogre_chieftain">Ogre Chieftain</string>
+    <string name="necromancer">Necromancer</string>
+    <string name="warlock">Warlock</string>
+    <string name="crown_and_sceptre">Crown and Sceptre</string>
+    <string name="ice_queen">Ice Queen</string>
+    <string name="warlock_quests">Warlock Quests</string>
+    <!-- Highland -->
+    <string name="alchemist">Alchemist</string>
+    <string name="highlander">Highlander</string>
+    <string name="rogue">Rogue</string>
+    <string name="sprite">Sprite</string>
+    <string name="valkyrie">Valkyrie</string>
+    <string name="vampiress">Vampiress</string>
+    <string name="battle_royale">Battle Royale</string>
+    <string name="eagle_king">Eagle King</string>
+    <string name="hand_of_doom">Hand of Doom</string>
+    <!-- Sacred Pool -->
+    <string name="chivalric_knight">Chivalric Knight</string>
+    <string name="dread_knight">Dread Knight</string>
+    <string name="cleric">Cleric</string>
+    <string name="magus">Magus</string>
+    <string name="sacred_pool">Sacred Pool</string>
+    <string name="judgement_day">Judgement Day</string>
+    <string name="demon_lord">Demon Lord</string>
+    <!-- Dragon -->
+    <string name="dragon_hunter">Dragon Hunter</string>
+    <string name="dragon_priestess">Dragon Priestess</string>
+    <string name="dragon_rider">Dragon Rider</string>
+    <string name="conjurer">Conjurer</string>
+    <string name="fire_wizard">Fire Wizard</string>
+    <string name="minotaur">Minotaur</string>
+    <string name="dragon_king">Dragon King</string>
+    <string name="domain_of_dragons">Domain of Dragons</string>
+    <string name="dragon_slayers">Dragon Slayers</string>
+    <!-- Blood Moon -->
+    <string name="grave_digger">Grave Digger</string>
+    <string name="vampire_hunter">Vampire Hunter</string>
+    <string name="doomsayer">Doomsayer</string>
+    <string name="horrible_black_void">Horrible Black Void</string>
+    <string name="blood_moon_werewolf">Blood Moon Werewolf</string>
+    <string name="Lightbearers">Lightbringers</string>
+    <!-- City -->
+    <string name="tinkerer">Tinkerer</string>
+    <string name="tavern_maid">Tavern Maid</string>
+    <string name="spy">Spy</string>
+    <string name="elementalist">Elementalist</string>
+    <string name="bounty_hunter">Bounty Hunter</string>
+    <string name="cat_burglar">Cat Burglar</string>
+    <string name="thieves_guild">Thieves\' Guild</string>
+    <string name="merchants_guild">Merchants\' Guild</string>
+    <string name="assassins_guild">Assassins\' Guild</string>
+    <!-- Firelands -->
+    <string name="dervish">Dervish</string>
+    <string name="jin_blooded">Jin Blooded</string>
+    <string name="nomad">Nomad</string>
+    <string name="warlord">Warlord</string>
+    <string name="spreading_flames">Spreading Flames</string>
+    <string name="crown_of_flame">Crown of Flame</string>
+    <string name="a_hero_rises">A Hero Rises</string>
+    <!-- Woodland -->
+    <string name="ancient_oak">Ancient Oak</string>
+    <string name="leywalker">Leywalker</string>
+    <string name="scout">Scout</string>
+    <string name="totem_warrior">Totem Warrior</string>
+    <string name="spider_queen">Spider Queen</string>
+    <string name="war_of_seasons">War of Seasons</string>
+    <string name="judged_by_fate">Judged by Fate</string>
+    <string name="wanderlust">Wanderlust</string>
+    <!-- Harbinger -->
+    <string name="ascendant_divine">Ascendant Divine</string>
+    <string name="celestial">Celestial</string>
+    <string name="possessed">Possessed</string>
+    <string name="armageddon_crown">Armageddon Crown</string>
+    <string name="end_of_days">End of Days</string>
+    <!-- Cataclysm -->
+    <string name="barbarian">Barbarian</string>
+    <string name="black_knight">Black Knight</string>
+    <string name="mutant">Mutant</string>
+    <string name="scavenger">Scavenger</string>
+    <string name="arcane_scion">Arcane Scion</string>
+    <string name="the_eternal_crown">The Eternal Crown</string>
+    <string name="cult_of_the_damned">Cult of the Damned</string>
+    <string name="the_one_talisman">The One Talisman</string>
+    <string name="lands_of_wonder">Lands of Wonder</string>
+    <!-- Nether Realm -->
+    <string name="pandoras_box">Pandora\'s Box</string>
+    <string name="the_hunt">The Hunt</string>
+    <string name="the_guantlet">The Gauntlet</string>
+    <!-- Digital Edition -->
+    <string name="pirate">Pirate</string>
+    <string name="ninja">Ninja</string>
+    <string name="exorcist">Exorcist</string>
+    <string name="courtesan">Courtesan</string>
+    <string name="devils_minion">Devil\'s Minion</string>
+    <string name="genie">Genie</string>
+    <string name="martyr">Martyr</string>
+    <string name="gambler">Gambler</string>
+    <string name="black_witch">Black Witch</string>
+    <string name="apprentice_mage">Apprentice Mage</string>
+    <string name="shape_shifter">Shape Shifter</string>
+    <string name="shaman">Shaman</string>
+    <string name="illusionist">Illusionist</string>
+    <string name="jester">Jester</string>
+    <string name="goblin_shaman">Goblin Shaman</string>
+    <string name="no_character">No Character!</string>
+    <string name="no_ending">No Ending!</string>
+
 </resources>
